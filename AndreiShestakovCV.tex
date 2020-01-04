@@ -45,7 +45,7 @@
 % Custom commands
 \newcommand{\resumeItem}[2]{
   \item\small{
-    \textbf{#1}{: #2 \vspace{-2pt}}
+    \textbf{#1}{. #2 \vspace{-2pt}}
   }
 }
 
@@ -99,14 +99,12 @@
       {SK Hynix Memory Solutions Eastern Europe}{Minsk, Belarus}
       {Senior Software Engineer}{May 2018 - Present}
       \resumeItemListStart
-	R\&D center in Minsk has big experience in testing FirmWare for SSD. It has HardWare Simulator team, it has FirmWare Software Quality Engineering team, it has Advanced Algorithms team, it has SSD HardWare Verification team, it has FW team.
-	
-	I'm working in SQE team and I have a project inside huge project.
+	\resumeItem{Description}
+	 {SK Hynix R\&D center in Minsk specialized in SSD development. There are several departments: SSD HardWare Verification, Advanced Algorithms, FirmWare, Tools, HardWare Simulator and Software Quality Engineering.
 
-	Well, SK Hynix has several SSD projects per year. It can be SATA or NVMe projects also the projects at the same time can be Client or Enterprise. Enterprise SSD has some capacitors that help to save cached data to NAND in 15 microseconds. All these projects have some common protocols for common tests, like NVMe protocol tests or may be SATA protocol tests. Also they have some common tests for general working of NAND, for example. But in the same time all these SSD have a set of Vendor Specific Commands, that used by special Vendor Specific Tools.
-
-	So, my main task is not writing tests for Vendor Specific Command only, but also creating arcitecture and infrastructure for making all Vender Specific Command tests common, if it's possible.
-
+	SK Hynix has several SSD projects per year. It can be SATA or NVMe projects also the projects at the same time can be Client or Enterprise. Enterprise SSD has some capacitors that help to save cached data to NAND in 15 microseconds.}
+	\resumeItem{Role}
+	{I'm working in SQE team and lead project for testing Vendor Specific Commands (it's command set for different Vendor Specific Tools for SSD). My main task is not writing tests for Vendor Specific Commands only, but also creating arcitecture and infrastructure for making all Vendor Specific Command tests common, if it's possible.}
         \resumeItem{Technologies}
           {Python 2.7 and internal framework, C and C++ code debug.}
       \resumeItemListEnd
