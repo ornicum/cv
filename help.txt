@@ -1,2 +1,4 @@
 sudo apt-get install texlive texlive-full
 pdflatex name.pdf
+
+ls -al
