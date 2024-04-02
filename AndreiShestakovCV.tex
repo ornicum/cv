@@ -40,8 +40,13 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
+  \vspace{-4pt}\scshape\raggedright\bf\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Subsection formatting
+\titleformat{\subsection}{
+  \vspace{-4pt}\scshape\raggedright\normalfont\bf\small
+}{}{0em}{}[\color{black} \vspace{-5pt}]
 
 %-------------------------
 % Custom commands
@@ -85,7 +90,6 @@
 \hfil
 \mbox
   {
-    %\begin{tabular*}{\textwidth}l@{\extracolsep{\fill}}r}
     \begin{tabular}{cp{8em}}
       Application for "" \\
       \\
@@ -97,7 +101,6 @@
       Skype: ornicum \\
       +905364596237 \\
       +79616109035 (Messengers)
-    %\end{tabular*}
     \end{tabular}
     \addPhoto
   }
@@ -106,14 +109,12 @@
 
 \newpage
 
-%----------HEADING-----------------
+%-------------COVER LETTER-------------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  DOB: July 10 1984 & Marital status : Single \\
-  LinkedIn: \href{https://www.linkedin.com/in/andrey-shestakov-4450b24}{Andrey Shestakov} \\
+  "Company" & "date" \\
 \end{tabular*}
 
-%-------------ABOUT-------------------
-\section{About}
+\section{Cover letter}
 
 \begin{figure}[h!]
   \begin{minipage}[h!]{0.8\textwidth}
@@ -130,26 +131,35 @@ My English is good for chat and email. Let me a chance for more verbal skills pr
   \end{minipage}
 \end{figure}
 
-I have a Bachelors in Applied Mathematics and Computer Science from Novosibirsk State Technical University, in Russia. Also my diploma passed nostrification in Czech Technical University in Prague and got education level on Master degree. My specialization is statistics.
+I have a Bachelor's in Applied Mathematics and Computer Science from Novosibirsk State Technical University, in Russia. Also my diploma passed nostrification in Czech Technical University in Prague and got education level on Master degree. My specialization is statistics.
 
 I like my profession and I will glad to work using my knowledge in algorithms, statistics, complex computing and so on. I have wide experience in commercial software engineering for realizing your complex algorithmic computing project on best level.
 
 I'm developing primarily on C/C++ and Python (versions 2.5.x+ and 3.5+).
 
+\newpage
 
-%-----------OBJECTIVE-----------------
-\section{Objective}
-  \begin{itemize}
-    \item Senior Python Developer
-    \item Team Lead
-    \item System Architect
-    \item Middle C++ Developer
-  \end{itemize}
+
+\section{Overview}
+
+%--------PERSONAL DATA-----------------
+\subsection{Personal Data}
+\begin{tabular*}{0.5\textwidth}{l@{\extracolsep{\fill}}l}
+  Name & Andrei Shestakov \\
+  DOB & July 10 1984, Novosibirsk, Russia \\
+  Marital status & Single \\
+\end{tabular*}
+
+
+%--------GRADUATION-------------------
+\subsection{Graduation}
+Bachelor's in Applied Mathematics and Computer Scince in Novosibirsk State Technical University, Russia.
+
+Also my diploma passed nostrification in Czech Technical University in Prague and got education level on Master degree.
 
 
 %-------PROGRAMMING SKILLS------------
-\section{Programming Skills}
-  
+\subsection{Programming Skills}
   \begin{figure}[h!]
     \begin{minipage}[h!]{0.49\textwidth}
       \begin{itemize}
@@ -159,67 +169,67 @@ I'm developing primarily on C/C++ and Python (versions 2.5.x+ and 3.5+).
           \end{itemize}
         \item{C/C++}
           \begin{itemize}
-	    \item STL (exclude last standards since C++14, I'm not so good in it)
+	    \item STL (exclude last standards since C++14)
 	    \item POSIX
 	    \item multithreading
 	    \item multiprocessing
 	    \item Qt 4.x.x+
+          \end{itemize}
+        \item{SQL}
+          \begin{itemize}
+            \item MySQL
+            \item PostgreSQL
+          \end{itemize}
+        \item{System Administration}
+          \begin{itemize}
+            \item I have wide experience in administration UNIX-based operation systems since 2003.
           \end{itemize}
       \end{itemize}
     \end{minipage}
     \hfill
     \begin{minipage}[h!]{0.49\textwidth}
       \begin{itemize}
-        \item{SQL}
+        \item{Python}
           \begin{itemize}
-            \item MySQL
-	    \item PostgreSQL
-         \end{itemize}
-        \item{NoSQL}
-          \begin{itemize}
-            \item Redis
-	    \item Cassandra
-          \end{itemize}
-        \item{Administration}
-          \begin{itemize}
-            \item I have wide experience in administration UNIX-based operation systems since 2003.
-          \end{itemize}
-      \end{itemize}
-    \end{minipage}
-  \end{figure}
-  \begin{figure}[h!]
-    \begin{minipage}[h!]{0.49\textwidth}
-      \begin{itemize}
-      \item{Python}
-        \begin{itemize}
-	  \item STL
-          \item Scrapy
-          \item Django
-	  \item Flask
-        \end{itemize}
-      \end{itemize}
-    \end{minipage}
-    \begin{minipage}[h!]{0.49\textwidth}
-      \begin{itemize}
-        \item{}
-          \begin{itemize}
-	    \item Tornado
+            \item STL
+            \item Scrapy
+            \item Django
+            \item Flask
+            \item Tornado
             \item Cherrypy
             \item Sqlalchemy
             \item asyncio (include aiohttp, aioredis and so on)
           \end{itemize}
+        \item{NoSQL}
+          \begin{itemize}
+            \item Redis
+            \item Cassandra
+          \end{itemize}
       \end{itemize}
     \end{minipage}
-  \end{figure}    
+  \end{figure}
+
+%-----------SPECIAL SKILLS-----------
+\subsection{Special Skills}
+  \begin{itemize}
+    \item Native Russian.
+    \item Intermediate English.
+    \item Skipper license by ISSA.
+    \item Hobbies: playing guitar, mountaineering, sailing, fishing.
+  \end{itemize}
+
+\newpage
 
 %-----------EDUCATION-----------------
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
       {Novosibirsk State Technical University}{Novosibirsk, Russia}
-      {Bachelor of Applied Mathematics and Computer Science (Statistics); GPA: 4.32 / 5.00 } {Sep. 2002 -- June. 2007}
+      {Speciality "Electric drive and automation of industrial installations and technological complexes"} {Sep. 2000 -- June. 2002}
+    \resumeSubheading
+      {Novosibirsk State Technical University}{Novosibirsk, Russia}
+      {Bachelor's of Applied Mathematics and Computer Science (Statistics); GPA: 4.32 / 5.00 } {Sep. 2002 -- June. 2007}
   \resumeSubHeadingListEnd
-
 
 %-----------EXPERIENCE-----------------
 \section{Experience}
@@ -409,16 +419,6 @@ I'm developing primarily on C/C++ and Python (versions 2.5.x+ and 3.5+).
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
-
-
-%-----------SPECIAL SKILLS-----------
-\section{Special Skills}
-  \begin{itemize}
-    \item Native Russian.
-    \item Intermediate English.
-    \item Skipper license by ISSA.
-    \item Hobbies: playing guitar, mountaineering, fishing.
-  \end{itemize}
 
 %-------------------------------------------
 \end{document}
