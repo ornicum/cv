@@ -1,0 +1,74 @@
+%---------------------------------
+% Cover letter in Latex
+% Author : Andrei Shestakov
+% License : MIT
+%---------------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\bf\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+
+\begin{document}
+
+%\mbox{}
+
+%-------------COVER LETTER-------------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  Siemens Electronic Design Automation GmbH & 02.04.2024 \\
+  Munich, Bavaria, Germany \\
+\end{tabular*}
+
+\section{Cover letter}
+
+\begin{figure}[h!]
+  \begin{minipage}[h!]{0.8\textwidth}
+
+Hello,
+\\
+\\
+My name is Andrei Shestakov. I'd like to be a part of Siemens and I'm interested in the opportunity "Senior Software Engineer (m/f/d)".
+\\
+\\
+I got my education in Novosibirsk State Technical University. 2 years I studied on speciality "Electric drive and automation of industrial installations and technological complexes" and then I got Bachelor's in Applied Mathematics and Computer Science. I have been working in IT industry more then 15 years.
+\\
+\\
+My strong points are responsibility and quality. I'm sure that any project must work and must be done carefully on every stage.
+\\
+\\
+I love my profession. I studied numerical methods and sparse matrix techniques in the University. Unfortunately, not so many companies have projects with using strong math. Anyway I think I have relevant experience in 3 commercial projects. The first of them was connected with e-sports and I led there backend part with calculating statistics of players. The second one was connected with the Real Estate. There was a math model with nonlinear cubic equation and I fully realized it with solving direct and inverse problem. And the 3rd one was connected with automation in Energetics. I had there a lot of work with network protocols, where every byte make sense. Also there were 14 different servers and I solved problems with multithreading and multiprocessing.
+\\
+\\
+I think the opportunity would give me a chance to realize my potential as applied mathimatician. I'm sure I'm ready to solve tough computational complexity problems with my knowledge of good practices of code development, architecture of modern processors and so on.
+\\
+\\
+Thank you for consideration. I will be glad to be invited to an interview.
+\\
+\\
+Best regards,
+
+Andrei Shestakov.
+
+  \end{minipage}
+\end{figure}
+
+\end{document}
+
