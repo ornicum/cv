@@ -59,6 +59,12 @@
     \end{tabular*}\vspace{-5pt}
 }
 
+\newcommand{\resumeEducationNote}[1]{
+  \vspace{-3pt}
+  \item[]\footnotesize{#1}
+  \vspace{-3pt}
+}
+
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
 
 \renewcommand{\labelitemii}{$\circ$}
@@ -75,14 +81,18 @@
 \begin{document}
 
 %----------HEADING-----------------
+\begin{center}
+  \textbf{\Large Andrei Shestakov}\\[4pt]
+  \textbf{Senior Backend Engineer $\cdot$ Rust \& Python}\\
+  \textbf{High-Performance Systems $\cdot$ Distributed Systems $\cdot$ Time-Series Processing}
+\end{center}
+
+\vspace{4pt}
+
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\href{http://ornicum.ru/}{\Large Andrei Shestakov}} \\
-  DOB: July 10 1984 & Marital status : Single \\
   Email : \href{mailto:ornicum@gmail.com}{ornicum@gmail.com} & Mobile (Russian Federation) : +7-961-610-9035 \\
   LinkedIn: \href{https://www.linkedin.com/in/andrey-shestakov-4450b24}{Andrey Shestakov} & Mobile (Turkey) : +90-536-459-62-37 \\
 \end{tabular*}
-
-  I have also Telegram, WhatsApp and Viber on Russian mobile phone number.
 
 
 %-------------ABOUT-------------------
@@ -95,291 +105,327 @@
   \hfil
   \begin{minipage}[h!]{0.8\textwidth}
 
-Hi, I'm Andrei. I'm from Russia, Siberia.
+Senior backend engineer with about 20 years of commercial software development experience, currently focused on Rust, Python, and high-performance backend systems. My background includes distributed systems, data processing, time-series processing, and simulation.
 
-Now I'm living in Antalya, Turkey.
-
-Since 2007 I've been working in commercial software development. I have worked in different scaled projects. From little desktop applications to industrial solutions.
-
-I focus on clean code, robust architecture, and end‑to‑end responsibility.
+I work with Rust and Python together, choosing the right technology for each part of a system. Python is a strong choice for application logic and data processing, while Rust is useful for performance-critical parts where speed, resource usage, and predictable performance matter. I also have experience integrating Rust components into Python applications, including replacing slow Python components with Rust modules instead of rewriting the whole system.
 
   \end{minipage}
 \end{figure}
 
-I have a Bachelor's degree in Applied Mathematics \& Computer  Science (Statistics) from Novosibirsk State Technical University,  recognized as equivalent to a Master's degree by Czech Technical  University in Prague.
+I care about the quality of the whole system, not just the code I write. I try to understand how a system works as a whole, where problems really come from, and what can be improved without adding unnecessary complexity. For me performance, reliability, maintainability, and development speed are all part of building a good product.
 
-I like my profession and I will glad to work using my knowledge in algorithms, statistics, complex computing and so on. I have wide experience in commercial software engineering for realizing your complex algorithmic computing project on best level.
+I want my work to make the product better — faster, more reliable, easier to maintain, or easier to develop further. I take responsibility for the result, not just for implementing the task I was given.
 
-I'm developing primarily on Python (versions 2.5.x+ and 3.5+) and a little bit on C/C++ (just I don't know all features of standards since C++17). Also last year I have studied Rust and I have my own project developed on the programming language.
-
-
-%-----------OBJECTIVE-----------------
-\section{Objective}
-  \begin{itemize}
-    \item Senior Software Engineer (Python, Rust)
-  \end{itemize}
-
-
-%-------PROGRAMMING SKILLS------------
-\section{Programming Skills}
-  
-  \begin{figure}[h!]
-    \begin{minipage}[h!]{0.49\textwidth}
-      \begin{itemize}
-        \item {OOP/OOD}
-          \begin{itemize}
-            \item OOP is main instrument for C++ and Python, design patterns need to know for good architecture and I know it.
-          \end{itemize}
-        \item{C/C++}
-          \begin{itemize}
-	    \item STL (exclude last standards since C++20, I'm not so good in it)
-	    \item POSIX
-	    \item multithreading
-	    \item multiprocessing
-	    \item Qt 4.x.x+
-          \end{itemize}
-      \end{itemize}
-    \end{minipage}
-    \begin{minipage}[h!]{0.49\textwidth}
-      \begin{itemize}
-      \item{Python}
-        \begin{itemize}
-	  \item STL
-          \item Django
-	  \item FastAPI
-          \item Sqlalchemy
-          \item asyncio (include aiohttp, aioredis and so on)
-        \end{itemize}
-      \end{itemize}
-      \begin{itemize}
-        \item{Rust}
-          \begin{itemize}
-            \item STL
-            \item Tokio
-	    \item Axum
-            \item Diesel
-          \end{itemize}
-      \end{itemize}
-    \end{minipage}
-    \hfill
-  \end{figure}
-  \begin{figure}[h!]
-    \begin{minipage}[h!]{0.49\textwidth}
-      \begin{itemize}
-        \item{SQL}
-          \begin{itemize}
-            \item MySQL
-            \item PostgreSQL
-          \end{itemize}
-        \item{NoSQL}
-          \begin{itemize}
-            \item Redis
-            \item Cassandra
-          \end{itemize}
-      \end{itemize}
-    \end{minipage}
-    \begin{minipage}[h!]{0.49\textwidth}
-      \begin{itemize}
-        \item{System Administration}
-          \begin{itemize}
-            \item I have wide experience in administration UNIX-based operation systems since 2003.
-          \end{itemize}
-      \end{itemize}
-    \end{minipage}
-  \end{figure}
+Currently, I’m building a distributed platform for real-time processing, simulation, and analysis of time-series data, with a focus on modular architecture, in-memory processing, predictable execution, and performance optimization.
 
 %-----------EDUCATION-----------------
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
       {Novosibirsk State Technical University}{Novosibirsk, Russia}
-      {Bachelor of Applied Mathematics and Computer Science (Statistics); GPA: 4.32 / 5.00 } {Sep. 2002 -- June. 2007}
+      {Applied Mathematics and Computer Science; 5-year higher education}{Sep. 2002 -- June 2007}
+    \resumeEducationNote
+      {Education recognized at Master's level by Czech Technical University in Prague (ČVUT)}
   \resumeSubHeadingListEnd
 
+
+%-----------TECHNICAL SKILLS-----------------
+\section{Technical Skills}
+
+\begin{minipage}[t]{0.49\textwidth}
+  \textbf{Rust}\\
+  Tokio $\cdot$ Axum $\cdot$ Diesel $\cdot$ Prost $\cdot$ PyO3
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.49\textwidth}
+  \textbf{Python}\\
+  FastAPI $\cdot$ Django $\cdot$ SQLAlchemy $\cdot$ Alembic\\
+  asyncio $\cdot$ Celery $\cdot$ GraphQL
+\end{minipage}
+
+\vspace{6pt}
+
+\begin{minipage}[t]{0.49\textwidth}
+  \textbf{Systems \& Performance}\\
+  High-performance systems $\cdot$ Low-latency\\
+  Distributed systems $\cdot$ Microservices\\
+  Time-series processing $\cdot$ Data processing
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.49\textwidth}
+  \textbf{Data \& Infrastructure}\\
+  PostgreSQL $\cdot$ Redis $\cdot$ Cassandra $\cdot$ Docker
+\end{minipage}
+
+\vspace{6pt}
+
+\textbf{Additional}\\
+C/C++ $\cdot$ POSIX $\cdot$ Qt
 
 %-----------EXPERIENCE-----------------
 \section{Experience}
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {DataArt}{Saint Petersburg, Russia}
-      {Senior Software Engineer}{July 2021 - March 2023}
+      {Distributed Time-Series Processing Platform (Performance-focused R\&D)}{Self Employed}
+      {Personal Project -- Self-employed}{Apr. 2025 -- Present}
       \resumeItemListStart
         \resumeItem{Description}
-	  {DataArt is greate outstaff company with fintech specialization. Main markets are USA and Europe. The project I've been working for was connected with driver insurance in UK.}
-	\resumeItem{Role}
-	  {The main goal of our team was splitting monolith legacy project to microservices and adding integration with a new mobile application.}
-	\resumeItem{Technologies}
-	  {AWS, docker, Python 3, Django, FastAPI, PostgreSQL, gRPC, microservices}
-	\resumeItem{Achievements}
+          {Building a distributed platform for real-time processing, simulation and analysis of time-series data. The project focuses on making performance and predictable execution part of the system design from the beginning. It is built as a set of independent services with an in-memory processing engine for different processing and simulation workflows.}
+
+        \resumeItem{Role}
+          {Designing and developing the backend architecture and core services, from data ingestion and normalization to processing and real-time simulation. Building the core of the system in Rust and working on the data flow and processing architecture.}
+
+        \resumeItem{Technologies}
+          {Rust, Python}
+
+        \resumeItem{Achievements}
+          {Rewrote a Python microservice in Rust, reducing its execution time from hours to minutes (approximately 24x speedup).}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {DataArt}{Saint Petersburg, Russia}
+      {Senior Software Engineer}{July 2021 - April 2023}
+      \resumeItemListStart
+        \resumeItem{Description}
+          {Worked on a large-scale legacy backend system in the UK driver insurance domain, supporting a new mobile application.}
+        \resumeItem{Role}
+          {Contributed to decomposing a monolithic Django application into independent microservices. Designed and developed backend services using FastAPI as part of a gradual migration strategy. Extracted and reimplemented core business logic from the legacy system in new services.}
+        \resumeItem{Technologies}
+          {Python, Django, FastAPI, PostgreSQL, gRPC, Docker, AWS, Microservices}
+        \resumeItem{Achievements}
           {
             \begin{enumerate}
-              \item Full Agile Metodology understanding.
-	      \item Work with native English speakers.
-	      \item More understanding of Microservices Architecture.
+              \item Contributed to the migration of a large Django monolith toward an independent microservice architecture.
+              \item Developed backend services supporting the integration of a new mobile application.
+              \item Worked in a distributed international team and participated in code reviews and Agile/Scrum development.
             \end{enumerate}
           }
       \resumeItemListEnd
 
     \resumeSubheading
       {Demigos}{Remote}
-      {Senior Software Engineer}{August 2020 - July 2021}
+      {Senior Software Engineer}{October 2020 - July 2021}
       \resumeItemListStart
         \resumeItem{Description}
-	  {Demigos is a small outsourcing company in Ukraine. In general they work on US market.}
-	\resumeItem{Role}
-	  {I led backend part of project for US(CA) Realty.}
-	\resumeItem{Technologies}
-	  {AWS, docker, Python 3, Django, Celery, PostgreSQL, GraphQL, Redis}
-	\resumeItem{Achievements}
-	{The project I have been working is some kind of auction with a math model for calculating a virtual price of realty. The math model included nonlinear cubic equation and I fully realized it with solving direct and inverse problem.}
+          {Worked on an outsourced real-estate auction platform for a US-based client, built around a mathematical pricing model.}
+        \resumeItem{Role}
+          {Led the backend development of the project. Implemented the mathematical pricing model from its theoretical specification, translating it into production-ready backend logic for interactive price adjustment and bidding scenarios.}
+        \resumeItem{Technologies}
+          {Python, Django, PostgreSQL, Redis, Celery, GraphQL, Docker, AWS}
+        \resumeItem{Achievements}
+  {
+    \begin{enumerate}
+      \item Implemented a mathematical model for calculating virtual property prices based on dozens of transaction parameters.
+      \item Solved both forward and inverse problems: calculating the virtual price from given parameters and determining the required cash amount to reach a target price.
+      \item Translated the theoretical mathematical model into production-ready backend logic supporting interactive price adjustment and bidding scenarios.
+    \end{enumerate}
+  }
       \resumeItemListEnd
 
     \resumeSubheading
-      {SK Hynix Memory Solutions Eastern Europe}{Minsk, Belarus}
+      {SK hynix memory solutions Eastern Europe}{Minsk, Belarus}
       {Senior Software Engineer}{May 2018 - June 2020}
       \resumeItemListStart
-	\resumeItem{Description}
-	 {SK Hynix R\&D center in Minsk is specialized in SSD development. There are several departments: SSD Hardware Verification, Advanced Algorithms, Firmware, Tools, Hardware Simulator and Software Quality Engineering.
-
-	SK Hynix has several SSD projects per year. It can be SATA or NVMe projects also the projects at the same time can be Client or Enterprise. Enterprise SSD has some capacitors that help to save cached data to NAND in 15 microseconds.}
-	\resumeItem{Role}
-	{I was working in SQE team and led project for testing Vendor Specific Commands (it's command set for different Vendor Specific Tools for SSD). My main task was not writing tests for Vendor Specific Commands only, but also creating arcitecture and infrastructure for making all Vendor Specific Command tests common, if it was possible.}
+        \resumeItem{Description}
+          {Worked on firmware validation for SSD products using a proprietary C++ storage simulator and a Python-based testing framework. The work covered both SATA and NVMe environments and required debugging across multiple layers of the storage stack.}
+        \resumeItem{Role}
+          {Developed automated tests for Vendor Unique commands and was responsible not only for implementing individual tests, but also for improving the architecture and infrastructure of the testing framework. Worked across Python, C++, and C codebases, investigating issues at the test framework, simulator, device-model, and firmware levels. Acted as a technical point of contact for firmware functionality, working with developers in Minsk, Seoul, and California to gather the information required to design and validate comprehensive tests.}
         \resumeItem{Technologies}
-          {Python 2.7 and internal framework, C and C++ code debug.}
-	\resumeItem{Achievements}
+          {Python, C++, C, SATA, NVMe, SSD Firmware, C++ Storage Simulator, Automated Testing}
+        \resumeItem{Achievements}
           {
             \begin{enumerate}
-              \item Reduction of the code base due to improved architecture and infrastructure.
-	      \item Level up for my Soft Skills. I have worked a lot with collegues from different offices (Belarus, South Korea, USA) and different teams.
+              \item Redesigned the testing framework around a generalized protocol abstraction and the Factory Method pattern, replacing repeated product-specific implementations of 15--20 common Vendor Unique tests with reusable test infrastructure.
+              \item Investigated complex failures through code-level debugging and reverse engineering, tracing problems across the test framework, storage simulator, device model, and firmware.
+              \item Acted as a technical point of contact for firmware functionality, working with developers across Minsk, Seoul, and California to design and validate comprehensive test coverage.
             \end{enumerate}
           }
-      \resumeItemListEnd
-
-
-    \resumeSubheading
-      {Freelance}{Remote}
-      {Software Engineer}{2009 - Now}
-      \resumeItemListStart
-        \resumeItem{Description}
-          {There were many different projects.
-
-           There are biggest and most interesting.
-	   \begin{enumerate}
-             \item System for scraping, collecting and analysing data from bookmaker's sites. It was written on Django.
-             \item System for collection data from sport exchange betfair.com and also tools for statistical analysis. It was system with complex architecture that using server software written on C++, PostgreSQL as database, Redis for collecting bad structured data, Tornado as web-part server, web-sockets.
-             \item Web currency exchanger. Also in this project I wrote begin part of internet banking.
-	   \end{enumerate}}
-        \resumeItem{Role}
-          {System Administrator, C++ Software Engineer, Python Software Engineer.}
       \resumeItemListEnd
 
     \resumeSubheading
       {Mobalytics}{Saint Petersburg, Russia}
-      {Senior Software Engineer}{Oct 2016 - Mar 2018}
+      {Senior Back-End Software Engineer}{October 2016 - April 2018}
       \resumeItemListStart
         \resumeItem{Description}
-          {It's a startup for competiteve e-sports gamers like online coucher. There were several projects: know-how as GPI (General Performance Index), pre-game, post-game and statistics.}
-	\resumeItem{Role}
-	  {I led project named "Statistics" that shows different statistic characteristics of player for matches, seasons, characters and so on.}
-        \resumeItem{Technogies}
-	  {We changed technologies stack 5 times per year. Started from Python 2.7, Django, PostgreSQL, Celery, RabbitMQ and ended on Python 3.6, Cassandra, asyncio, Microservices, Kubernetes}
-	\resumeItem{Achievements}{Understanding how many requests could be handled by different types of architecture.}
-      \resumeItemListEnd
-
-     \resumeSubheading
-       {BARS Group}{Kazan and Saint Petersburg, Russia}
-       {Middle Python Developer}{Dec 2015 - Oct 2016}
-       \resumeItemListStart
-         \resumeItem{Description}
-	   {Company is part of RosTech, specialized on developing cloud Case/Buisness/Workflow management services for Russian Government.}
-	 \resumeItem{Role}
-	   {Developing cloud service named "Staff and salary", main client at that moment was Federal Treasury of Russian Federation.}
-	 \resumeItem{Technologies}
-	   {Python 2.7, Django-like internal framework, PostgreSQL, ExtJS.}
-	 \resumeItem{Achievements}{The company has high requirements for employee knowledge and all my collegues were real professionals. These factors ensured for me rapid growth to Senior Python Developer.}
-       \resumeItemListEnd
-
-     \resumeSubheading
-       {GDS Ltd}{Novosibirsk, Russia}
-       {Software Engineer}{Apr 2013 - Jan 2014}
-       \resumeItemListStart
-         \resumeItem{Description}
-	   {It's a small outsource company where founder is my friend. He asked me to work for a project for Logistics in Military Aircraft from scratch.}
-	 \resumeItem{Role}
-	   {Architecture of 3 server and 2 client solutions. Also developing network interfaces, GUI and so on.}
-	 \resumeItem{Technologies}
-	   {C++, Qt 4.6.+, PostgreSQL}
-	 \resumeItem{Achievements}{There was developed a full-fledged prototype of Logistics System.}
-       \resumeItemListEnd
-
-     \resumeSubheading
-       {AcademSoft}{Novosibirsk, Russia}
-       {Junior Software Developer}{Jul 2010 - Apr 2011}
-       \resumeItemListStart
-         \resumeItem{Description}
-	   {The company has 2 projects: billing and popular automobile navigator in Russia. I worked in the last one.}
-	 \resumeItem{Role}
-	   {I had a small project on Qt for PC, updater for "Navitel navigator" on mobile platforms. Also I worked in Porting Department, so I had tasks for debugging troubles with porting software to different platforms.}
-	 \resumeItem{Technologies}
-	   {C++, Qt 4.5.+}
-	 \resumeItem{Achievements}{In this company were good processes (strict rules for developing, code review, etc). I think in this particular company I became a professional Software Developer.}
-       \resumeItemListEnd
-
-     \resumeSubheading
-       {Externet Group}{Novosibirsk, Russia}
-       {Software Developer}{Aug 2008 - Feb 2009}
-       \resumeItemListStart
-         \resumeItem{Description}
-	   {VoIP service for buisness.}
-	 \resumeItem{Role}
-	   {Main tasks.
-	     \begin{enumerate}
-               \item Developing and support server software (VoIP).
-               \item Configuring and support Asterisk server.
-	       \item New hardware researching (VoIP gateways).
-	       \item Writing documentation.
-             \end{enumerate}
-	   }
-	 \resumeItem{Technologies}
-	   {C++, VoIP, SIP, Asterisk server}
-	 \resumeItem{Achievements}{I got knowledge of VoIP protocols and hardware systems.}
-       \resumeItemListEnd
-
-     \resumeSubheading
-      {EMA ltd}{Novosibirsk, Russia}
-      {Software Engineer} {Jul 2007 - Aug 2008}
-      \resumeItemListStart
-        \resumeItem{Description}
-          {Automation in Energetics. Company had 14 server and several client solutions for different tasks on power plants.}
+          {Worked on the backend of a data-driven esports platform focused on player statistics and performance analysis for professional League of Legends players.}
         \resumeItem{Role}
-          {My main tasks.
+          {Owned the backend service responsible for collecting, processing, and serving player statistics. Started with a Python 2 and PostgreSQL monolith and adapted the service through multiple iterations as the platform evolved and performance requirements increased.}
+        \resumeItem{Technologies}
+          {Python 2/3, Django, PostgreSQL, Celery, RabbitMQ, asyncio, Cassandra, Docker, Microservices}
+        \resumeItem{Achievements}
+          {
             \begin{enumerate}
-	      \item Migration system calls library from OS iRMX to Linux.
-              \item Developing and support server software.
-              \item Developing architecture of separate parts of software.
-              \item Writing documentation.
+              \item Adapted the backend architecture through successive performance bottlenecks identified by load testing, moving from synchronous processing to Celery/RabbitMQ, then to asynchronous Python and eventually a Cassandra-based microservices architecture.
+              \item Gained practical experience evaluating the performance and scalability characteristics of different backend architectures under increasing load.
+              \item Led the Statistics backend service responsible for processing and serving player statistics across matches, seasons, and game characters.
             \end{enumerate}
           }
-        \resumeItem{Technologies}
-          {C, Oracle}
-	\resumeItem{Achievements}
-	  {
-	    \begin{enumerate}
-	      \item Fully worked server software on Linux.
-	      \item Improved architecture of server for getting telemetry.
-	    \end{enumerate}
-	  }
       \resumeItemListEnd
 
+      \resumeSubheading
+      {BARS Group}{Kazan and Saint Petersburg, Russia}
+      {Middle Python Developer}{December 2015 - October 2016}
+      \resumeItemListStart
+        \resumeItem{Description}
+          {Worked on a cloud service for government organizations focused on staff and salary management.}
+        \resumeItem{Role}
+          {Developed and debugged backend functionality for the ``Staff and Salary'' service, with the Federal Treasury of the Russian Federation among its clients.}
+        \resumeItem{Technologies}
+          {Python 2.7, Django-like Internal Framework, PostgreSQL, ExtJS}
+        \resumeItem{Achievements}
+          {
+            \begin{enumerate}
+              \item Worked in a highly experienced engineering team with strict requirements for software development quality.
+            \end{enumerate}
+          }
+      \resumeItemListEnd
+
+\resumeSubheading
+      {Independent Software Engineer}{Novosibirsk, Russia}
+      {Independent Software Engineer}{March 2014 - September 2015}
+      \resumeItemListStart
+        \resumeItem{Description}
+          {Worked on backend components of a web-based currency exchange platform.}
+        \resumeItem{Role}
+          {Developed backend functionality and worked on core transaction-related logic.}
+        \resumeItem{Technologies}
+          {Python, C++, STL}
+      \resumeItemListEnd
+
+\resumeSubheading
+      {GDS Ltd}{Novosibirsk, Russia}
+      {Software Engineer}{April 2013 - January 2014}
+      \resumeItemListStart
+        \resumeItem{Description}
+          {Developed a logistics software system for military aviation from scratch.}
+        \resumeItem{Role}
+          {Designed the architecture of a multi-component client-server solution and developed network interfaces, GUI components, and backend functionality.}
+        \resumeItem{Technologies}
+          {C++, Qt 4.6+, PostgreSQL}
+        \resumeItem{Achievements}
+          {
+            \begin{enumerate}
+              \item Developed a full-fledged prototype of the logistics system from scratch.
+            \end{enumerate}
+          }
+      \resumeItemListEnd
+
+\resumeSubheading
+      {Independent Software Consultant}{Novosibirsk, Russia}
+      {Independent Software Consultant}{April 2012 - March 2013}
+      \resumeItemListStart
+        \resumeItem{Description}
+          {Worked on a data collection and analysis platform for a betting domain.}
+        \resumeItem{Role}
+          {Built a system for scraping, aggregating, and analyzing data from bookmaker platforms. Designed backend services and handled large volumes of semi-structured data.}
+        \resumeItem{Technologies}
+          {Python, Django, PostgreSQL}
+        \resumeItem{Achievements}
+          {
+            \begin{enumerate}
+              \item Designed and implemented backend components for data collection and processing.
+            \end{enumerate}
+          }
+      \resumeItemListEnd
+
+\resumeSubheading
+      {Independent Software Developer}{Novosibirsk, Russia}
+      {Independent Software Developer}{April 2011 - March 2012}
+      \resumeItemListStart
+        \resumeItem{Description}
+          {Developed a real-time data processing system for a sports exchange platform.}
+        \resumeItem{Role}
+          {Designed the system architecture and implemented real-time data collection and processing pipelines using streaming data from the exchange. Developed statistical analysis components.}
+        \resumeItem{Technologies}
+          {C++, Python, PostgreSQL, Redis, Tornado, WebSockets}
+        \resumeItem{Achievements}
+          {
+            \begin{enumerate}
+              \item Implemented real-time data processing pipelines for streaming exchange data.
+            \end{enumerate}
+          }
+      \resumeItemListEnd
+
+\resumeSubheading
+      {AcademSoft}{Novosibirsk, Russia}
+      {Junior Software Developer}{July 2010 - April 2011}
+      \resumeItemListStart
+        \resumeItem{Description}
+          {Worked on software for the Navitel navigation platform.}
+        \resumeItem{Role}
+          {Developed a Qt-based PC application for updating Navitel Navigator software on mobile platforms and debugged software porting issues across different platforms.}
+        \resumeItem{Technologies}
+          {C++, Qt 4.5+}
+        \resumeItem{Achievements}
+          {
+            \begin{enumerate}
+              \item Worked within a structured software development process including code reviews and defined development practices.
+            \end{enumerate}
+          }
+      \resumeItemListEnd
+
+\resumeSubheading
+      {Freelance}{Novosibirsk, Russia}
+      {System Administrator}{February 2009 - July 2010}
+      \resumeItemListStart
+        \resumeItem{Description}
+          {Administered UNIX-like systems and maintained distributed server environments.}
+        \resumeItem{Role}
+          {Configured and maintained distributed systems including master-slave database servers, multiple web servers, and load balancing infrastructure.}
+        \resumeItem{Technologies}
+          {UNIX/Linux, Databases, Web Servers, Load Balancing}
+      \resumeItemListEnd
+
+\resumeSubheading
+      {Externet Group}{Novosibirsk, Russia}
+      {Software Developer}{August 2008 - February 2009}
+      \resumeItemListStart
+        \resumeItem{Description}
+          {Worked on server software for business VoIP services.}
+        \resumeItem{Role}
+          {Developed and supported VoIP server software, configured and maintained Asterisk servers, researched VoIP gateway hardware, and prepared technical documentation.}
+        \resumeItem{Technologies}
+          {C++, VoIP, SIP, Asterisk}
+      \resumeItemListEnd
+
+\resumeSubheading
+      {EMA Ltd}{Novosibirsk, Russia}
+      {Software Engineer}{July 2007 - August 2008}
+      \resumeItemListStart
+        \resumeItem{Description}
+          {Worked on server software for industrial automation systems deployed across power plants, including 14 production servers and several client applications.}
+        \resumeItem{Role}
+          {Migrated system-call libraries from iRMX to Linux, developed and supported server software, designed parts of the software architecture, and prepared technical documentation.}
+        \resumeItem{Technologies}
+          {C, Oracle, Linux, iRMX}
+        \resumeItem{Achievements}
+          {
+            \begin{enumerate}
+              \item Migrated server software to Linux.
+              \item Improved the architecture of the telemetry server.
+            \end{enumerate}
+          }
+      \resumeItemListEnd
+
+\resumeSubheading
+      {Sibirskiy Standart}{Novosibirsk, Russia}
+      {System Administrator}{July 2004 - April 2006}
+      \resumeItemListStart
+        \resumeItem{Description}
+          {Administered and maintained a local home network.}
+        \resumeItem{Role}
+          {Managed network infrastructure and provided system administration support.}
+      \resumeItemListEnd
   \resumeSubHeadingListEnd
+
 
 
 %-----------SPECIAL SKILLS-----------
 \section{Special Skills}
   \begin{itemize}
-    \item Upper Intermediate English.
-    \item Skipper license by ISSA.
+    \item Upper-Intermediate English.
+    \item Skipper license (ISSA).
     \item Hobbies: playing guitar, mountaineering, fishing.
   \end{itemize}
 
